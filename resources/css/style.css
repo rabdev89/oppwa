@@ -1,0 +1,409 @@
+body {
+    background-color: #eee
+}
+
+.container {
+    height: 100vh
+}
+
+.card {
+    border: none
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    min-height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control {
+    border-bottom: 2px solid #eee !important;
+    border: none;
+    font-weight: 600
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #8bbafe;
+    outline: 0;
+    box-shadow: none;
+    border-radius: 0px;
+    border-bottom: 2px solid blue !important
+}
+
+.inputbox {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%
+}
+
+.inputbox span {
+    position: absolute;
+    top: 7px;
+    left: 11px;
+    transition: 0.5s
+}
+
+.inputbox i {
+    position: absolute;
+    top: 13px;
+    right: 8px;
+    transition: 0.5s;
+    color: #3F51B5
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+.inputbox input:focus~span {
+    transform: translateX(-0px) translateY(-15px);
+    font-size: 12px
+}
+
+.inputbox input:valid~span {
+    transform: translateX(-0px) translateY(-15px);
+    font-size: 12px
+}
+
+.card-blue {
+    background-color: #492bc4
+}
+
+.hightlight {
+    background-color: #5737d9;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 14px
+}
+
+.yellow {
+    color: #fdcc49
+}
+
+.decoration {
+    text-decoration: none;
+    font-size: 14px
+}
+
+.btn-success,
+.wpwl-button-pay {
+    color: #fff;
+    background-color: #492bc4;
+    border-color: #492bc4
+}
+
+.btn-success:hover,
+.wpwl-button-pay:hover {
+    color: #fff;
+    background-color: #492bc4;
+    border-color: #492bc4
+}
+
+.decoration:hover {
+    text-decoration: none;
+    color: #fdcc49
+}
+
+
+/*
+WPML CONTROLS
+*/
+
+.wpwl-form-card {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0 !important;
+    background: transparent;
+    min-width: 100% !important;
+    position: relative;
+    z-index: 2;
+    /* pointer-events: none; */
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+.wpwl-container-card .checkout-payment__radio label {
+    padding-bottom: 1rem;
+}
+
+.wpwl-container-virtualAccount-PAYPAL {
+    display: block !important;
+    position: relative;
+    z-index: 2;
+    max-height: 0;
+    overflow: hidden;
+    /* pointer-events: none; */
+    -ms-touch-action: none;
+    touch-action: none;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.wpwl-container-virtualAccount-PAYPAL button {
+    border-color: #e6e6e6;
+    padding: 1rem 1.5rem;
+    border-radius: 0 !important;
+    -webkit-box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+#wpwl-registrations.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.wpwl-control {
+    padding: 1rem;
+    height: 42px;
+    border-radius: 2px;
+}
+
+.wpwl-control-iframe {
+    max-height: 50px;
+    padding: 0 5px !important;
+}
+
+.wpwl-control-brand {
+    padding: 0 1rem;
+}
+
+.wpwl-label {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    color: #333333;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+    width: 90px;
+}
+
+.wpwl-group.wpwl-group-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-display: flex;
+    -o-display: flex;
+    -moz-display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.wpwl-button-pay {
+    width: 100%;
+}
+
+.wpwl-form {
+    margin-bottom: 0 !important;
+    max-width: 100%;
+}
+
+.wpwl-button-pay-disabled {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    left: 0;
+    bottom: 0;
+    top: auto;
+    position: absolute;
+    display: block;
+    z-index: 2;
+}
+
+.wpwl-button-pay-disabled.has-saved {
+    bottom: 28px;
+}
+
+
+.wpwl-registration {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 0;
+}
+
+.wpwl-registration .wpwl-wrapper-registration-brand,
+.wpwl-registration .wpwl-wrapper-registration-details {
+    width: 80%;
+}
+
+.wpwl-registration .wpwl-wrapper-registration-brand:after,
+.wpwl-registration .wpwl-wrapper-registration-details:after {
+    content: 'SAVED PAYMENT';
+    background: #333333;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    padding: 1rem;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 3px 7px;
+    color: #FFF;
+    font-size: 8px;
+}
+
+.wpwl-registration .wpwl-wrapper-registration-number {
+    font-size: 14px;
+    font-family: "Lora", serif;
+    letter-spacing: 0;
+    padding-right: 1rem;
+}
+
+.wpwl-registration .wpwl-wrapper-registration-holder,
+.wpwl-registration .wpwl-wrapper-registration-expiry {
+    display: none;
+}
+
+#wpwl-registrations form {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+}
+
+.wpwl-group-registration {
+    margin-bottom: 1rem;
+}
+
+.wpwl-container-card {
+    display: block !important;
+    border-radius: 5px;
+}
+
+.wpwl-container-card .wpwl-group {
+    margin-bottom: 1.5rem;
+}
+
+.wpwl-container-card .wpwl-group-submit {
+    margin-bottom: 0;
+}
+
+.wpwl-container-card .checkbox__option {
+    padding-left: 0;
+}
+
+.wpwl-container-card .checkbox__option .box {
+    top: 3px;
+    left: 0;
+}
+
+.wpwl-container-card .checkbox__option label {
+    padding: 0;
+    margin-left: 1.5rem;
+}
+
+.wpwl-container-card .checkbox__option label:after {
+    content: none;
+}
+
+.checkout-payment__radio input[type="radio"]:checked+span+label+form+.wpwl-container-virtualAccount-PAYPAL {
+    max-height: 100%;
+    pointer-events: all;
+    -ms-touch-action: auto;
+    touch-action: auto;
+    overflow: visible;
+}
+
+.wpwl-wrapper-registration {
+    padding-left: 0;
+}
+
+.wpwl-group {
+    margin-bottom: 0;
+    display: flex;
+}
+
+.wpwl-group-registration {
+    border: 1px solid #E6E6E6;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    padding: 1.5rem 1rem 0.5rem;
+}
+
+.wpwl-group-registration .wpwl-wrapper-registration-brand {
+    display: none;
+}
+
+.wpwl-group-registration.wpwl-selected {
+    border-color: #C29181;
+}
+
+form.wpwl-form-registrations .wpwl-group-registration {
+    display: block;
+}
+
+form.wpwl-form-registrations .wpwl-group-registration .wpwl-registration {
+    display: block;
+}
+
+form.wpwl-form-registrations .wpwl-group-registration .wpwl-group,
+form.wpwl-form-registrations .wpwl-group-registration .wpwl-label-brand,
+form.wpwl-form-registrations .wpwl-group-registration .wpwl-wrapper-brand {
+    float: none;
+}
+
+.wpwl-form-registrations .wpwl-group-submit {
+    display: none;
+}
+
+.wpwl-form-registrations .wpwl-group-registration .wpwl-group-submit {
+    display: block;
+}
+
+.wpwl-button-pay {
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+    display: inline-block;
+    -webkit-transition: all 0.3s cubic-bezier(0.55, 0.085, 0, 0.96);
+    transition: all 0.3s cubic-bezier(0.55, 0.085, 0, 0.96);
+    text-transform: uppercase;
+}
+
+.wpwl-group-cardNumber,
+.wpwl-group-expiry,
+.wpwl-group-brandLogo,
+.wpwl-group-cvv,
+.wpwl-group-cardHolder,
+.wpwl-wrapper-cardNumber,
+.wpwl-wrapper-cardNumber,
+.wpwl-wrapper-cardHolder,
+.wpwl-wrapper-cvv,
+.wpwl-wrapper-expiry {
+    width: 100% !important;
+    padding-right: 0 !important;
+}
+
+
+.wpwl-control-cardNumber,
+.wpwl-wrapper-cardHolder,
+.wpwl-control-cvv {
+    width: 100% !important;
+    border-radius: 5px;
+}
